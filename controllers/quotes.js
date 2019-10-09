@@ -2,10 +2,15 @@ const Quotes = require('../models/quotes');
 
 exports.create = (req, res) => {
     const quotes = new Quotes({
-        quote: req.body.quote,
+        statement: req.body.statement,
     });
-    quote.save().then(() => {
-        res.status(201).json(artist);
+    quotes.save().then(() => {
+        res.status(201).json(quotes);
     });
 };
 
+exports.list = (req, res) => {
+    Quotes.find({}, (err, quotes) => {
+        res.status(200).send(quotes);
+    });
+};
