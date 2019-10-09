@@ -4,11 +4,14 @@
   "description": "Random quotes from the man, the mystery, the legend - Benet Thomas.",
   "main": "index.js",
   "dependencies": {
-    "mongoose": "^5.7.3"
+    "dotenv": "^8.1.0",
+    "mongoose": "^5.7.3",
+    "nodemon": "^1.19.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
