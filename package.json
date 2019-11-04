@@ -4,6 +4,7 @@
   "description": "Random quotes from the man, the mystery, the legend - Benet Thomas.",
   "main": "index.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "mongoose": "^5.7.3",

@@ -1,8 +1,9 @@
 const express = require('express');
 const quotesControllers = require('./controllers/quotes');
 const app = express();
+const cors = require('cors');
 
-app.use(express.json());
+app.use(cors());
 
 app.post('/quotes', quotesControllers.create);
 
